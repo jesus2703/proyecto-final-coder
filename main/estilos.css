@@ -1,0 +1,594 @@
+/* ESTILOS INICIO */
+#logo {
+  color: beige;
+  font-weight: 700;
+}
+
+#navegacion {
+  color: beige;
+  font-weight: 600;
+}
+
+#navegacion:hover {
+  background-color: rgb(64, 226, 238);
+  font-size: 1.05em;
+}
+
+#portada {
+  background: url(../img/imagen-4.jpg) no-repeat center center fixed;
+  background-size: cover;
+  border: 2px solid white;
+}
+#portada .container-portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 55vw;
+  height: 100vh;
+  color: white;
+}
+#portada .container-portada .titulo-principal {
+  font-size: 3.5em;
+  font-weight: 700;
+  padding-top: 40px;
+}
+#portada .container-portada .subtitulo-principal {
+  font-size: 2em;
+}
+#portada .container-portada .subtitulo-secundario {
+  font-size: 1.5em;
+  margin-bottom: 25px;
+}
+#portada .container-portada .iconos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  border: 2px solid;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+#portada .container-portada .boton-portada {
+  padding: 10px;
+  background-color: #4bc1f0;
+  width: 35%;
+  margin: auto;
+  border-radius: 10px;
+}
+#portada .container-portada .boton-portada a {
+  text-decoration: none;
+  color: white;
+}
+#portada .container-portada .boton-portada:hover {
+  background-color: #0da9b4;
+  font-size: 1.1em;
+}
+
+/* ESTILOS NOSOTROS */
+
+body {
+  background: #f1faff;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.container__cards {
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 280px;
+  margin: 10px;
+  transition: all 300ms;
+  border: none;
+  background-color: #f1faff;
+}
+
+.card:hover {
+  width: 310px;
+}
+
+.card .cover {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card .cover img {
+  width: 250px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 40px;
+  z-index: 1;
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.5));
+  transition: all 400ms;
+}
+
+.card:hover .cover img {
+  top: 0px;
+  filter: none;
+}
+
+.card .img__back {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  background-size: cover;
+  border-radius: 20px;
+  transition: all 300ms;
+}
+
+.card:nth-of-type(1) .img__back {
+  background-image: url(../img/bg1.jpg);
+}
+
+.card:nth-of-type(2) .img__back {
+  background-image: url(../img/bg1.jpg);
+}
+
+.card:nth-of-type(3) .img__back {
+  background-image: url(../img/bg1.jpg);
+}
+
+.card:nth-of-type(4) .img__back {
+  background-image: url(../img/bg1.jpg);
+}
+
+.card:hover .img__back {
+  bottom: -40px;
+}
+
+.card .description {
+  background: white;
+  margin-top: -10px;
+  padding: 20px;
+  border-radius: 0px 0px 20px 20px;
+  transition: all 300ms;
+}
+
+.card:hover .description {
+  padding: 40px;
+}
+
+.card .description h2 {
+  margin-top: 10px;
+}
+
+.card .description p {
+  margin-top: 10px;
+}
+
+.card .description input {
+  padding: 10px 40px;
+  margin-top: 20px;
+  border: none;
+  background: #0da9b4;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 300ms;
+}
+
+.card .description input:hover {
+  background: #1aeedc;
+}
+
+/* ESTILOS SERVICIOS */
+
+#servicios {
+  background: #f1faff;
+  border: 2px solid white;
+  height: 96vh;
+}
+#servicios .titulo-servicios {
+  text-align: center;
+  font-size: 1.7em;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+#servicios .contenedor-servicios {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  padding-bottom: 20px;
+}
+#servicios .contenedor-servicios .iframe-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  width: 25%;
+}
+#servicios .contenedor-servicios .iframe-card iframe {
+  border-radius: 10px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+#servicios .contenedor-servicios .iframe-card .subtitulo-servicios {
+  font-size: 1.3em;
+}
+#servicios .div-btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.boton-servicios,
+.boton-servicios-dos {
+  padding: 10px;
+  background-color: #168dbd;
+  border-radius: 10px;
+}
+.boton-servicios a,
+.boton-servicios-dos a {
+  text-decoration: none;
+  color: white;
+}
+.boton-servicios:hover,
+.boton-servicios-dos:hover {
+  background-color: #0da9b4;
+  font-size: 1.1em;
+}
+
+.boton-servicios-dos {
+  background-color: rgb(7, 82, 100);
+}
+
+/* ESTILOS GALERIA */
+
+#nuestro-trabajo {
+  border: 2px solid white;
+}
+
+.titulo-galeria {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.7em;
+}
+
+#img-carrusel {
+  max-height: 20rem;
+  max-width: 88%;
+  margin: auto;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.contenedor-valores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 20px;
+}
+
+.valores {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  border-left: 9px solid;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+}
+
+.valores h4 {
+  font-size: 1.3em;
+  padding-left: 10px;
+}
+
+/* ESTILOS CONTACTO */
+
+#section-contacto {
+  border: 2px solid white;
+  height: 87vh;
+}
+#section-contacto .titulo-contacto {
+  text-align: center;
+  font-size: 1.7em;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+#section-contacto .contenedor-contacto {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+#section-contacto .contenedor-contacto .contacto-izquierda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 72vh;
+}
+#section-contacto .contenedor-contacto .contacto-izquierda .contacto-info {
+  width: 80%;
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+#section-contacto
+  .contenedor-contacto
+  .contacto-izquierda
+  .contacto-info
+  .texto-contacto {
+  font-size: 20px;
+  padding: 10px;
+}
+#section-contacto .contenedor-contacto .formulario {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+#section-contacto .contenedor-contacto .formulario .form {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 1em;
+  padding: 3.5em 1.5em;
+  background-color: #0da9b4;
+  margin-bottom: 20px;
+  height: 68vh;
+}
+#section-contacto .contenedor-contacto .formulario .form .form-container {
+  width: 100%;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%;
+}
+#section-contacto
+  .contenedor-contacto
+  .formulario
+  .form
+  .form-container
+  .form-input {
+  font-size: 1rem;
+  padding: 0.8em 1em;
+  outline: none;
+  border: none;
+  border: 1px solid #bbb0b0;
+  border-radius: 0.2em;
+}
+#section-contacto
+  .contenedor-contacto
+  .formulario
+  .form
+  .form-container
+  .form-input--message {
+  resize: none;
+  padding: 1.8em 1em;
+  margin-bottom: 0.5em;
+}
+#section-contacto
+  .contenedor-contacto
+  .formulario
+  .form
+  .form-container
+  .form-cta {
+  border: none;
+  font-weight: 700;
+  padding: 0.7em;
+  border: 1px solid #bbb0b0;
+  color: black;
+  cursor: pointer;
+}
+
+/* MOBILE FIRTS */
+/* SMARTPHONE */
+
+@media (max-width: 480px) {
+  /* ESTILOS INICO */
+  #logo {
+    font-size: 1em;
+  }
+
+  #navegacion {
+    font-size: 0.9em;
+  }
+
+  #portada {
+    background: none;
+    background: url(../img/bg1.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+  #portada .container-portada {
+    width: 100vw;
+  }
+
+  .titulo-principal {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+
+  .subtitulo-principal {
+    font-size: 1.5em;
+  }
+
+  .subtitulo-secundario {
+    font-size: 1em;
+  }
+
+  /* ESTILOS NOSOTROS */
+  .card-title {
+    font-size: 1.5em;
+  }
+
+  /* ESTILOS SERVICIO */
+
+  #servicios {
+    height: 96vh;
+  }
+  #servicios .titulo-servicios {
+    font-size: 1.2em;
+  }
+  #servicios .contenedor-servicios {
+    flex-wrap: wrap;
+  }
+  #servicios .contenedor-servicios .iframe-card {
+    width: 40%;
+  }
+
+  #servicios .contenedor-servicios .iframe-card .subtitulo-servicios {
+    font-size: 0.8em;
+  }
+  #servicios .contenedor-servicios .iframe-card p {
+    display: none;
+  }
+  #servicios .div-btn {
+    display: flex;
+    justify-content: space-around;
+  }
+  .boton-servicios a,
+  .boton-servicios-dos a {
+    font-size: 0.8em;
+  }
+  .boton-servicios:hover,
+  .boton-servicios-dos:hover {
+    background-color: #0da9b4;
+    font-size: 1.1em;
+  }
+
+  /* ESTILOS GALERIA */
+
+  #nuestro-trabajo {
+    height: 85vh;
+  }
+
+  .titulo-galeria {
+    font-size: 1.2em;
+  }
+
+  .valores {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  .valores img {
+    width: 15%;
+  }
+
+  .valores h4 {
+    padding: 0px;
+    font-size: 0.6em;
+    padding-left: 5px;
+  }
+
+  /* ESTILOS CONTACTO */
+
+  #section-contacto .titulo-contacto {
+    font-size: 1.3em;
+  }
+  #section-contacto
+    .contenedor-contacto
+    .contacto-izquierda
+    .contacto-info
+    .texto-contacto {
+    font-size: 15px;
+  }
+  #section-contacto
+    .contenedor-contacto
+    .formulario
+    .form
+    .form-container
+    .form-input {
+    font-size: 0.9rem;
+  }
+}
+/* TABLET */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Estilos pagina inicio */
+  #portada {
+    background-position: center;
+  }
+
+  .container-portada {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .titulo-principal {
+    font-size: 2.5em;
+  }
+
+  .subtitulo-principal {
+    font-size: 1.5em;
+  }
+
+  .subtitulo-secundario {
+    font-size: 1.2em;
+  }
+
+  .iconos {
+    width: 90%;
+    margin: auto;
+  }
+
+  /* Estilos servicios */
+
+  #servicios .contenedor-servicios .iframe-card .subtitulo-servicios {
+    font-size: 0.8em;
+  }
+
+  .iframe-card p {
+    font-size: 0.6em;
+  }
+
+  .titulo-galeria {
+    font-size: 1.3em;
+  }
+
+  /* Estilos galeria */
+  .valores {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+
+  .valores img {
+    width: 15%;
+  }
+
+  .valores h4 {
+    font-size: 0.9em;
+    padding-left: 5px;
+  }
+
+  /* Estilos contacto */
+
+  #section-contacto .titulo-contacto {
+    font-size: 1.5em;
+  }
+
+  #section-contacto
+    .contenedor-contacto
+    .contacto-izquierda
+    .contacto-info
+    .texto-contacto {
+    font-size: 18px;
+  }
+}
